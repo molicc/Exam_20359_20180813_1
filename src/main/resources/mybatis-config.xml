@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC
+        "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+    <!-- 引用database.properties文件 -->
+    <properties resource="database.properties"/>
+    <!-- 全局配置 -->
+    <!--<settings>-->
+    <!--&lt;!&ndash; 配置日志记录工具为log4j &ndash;&gt;-->
+    <!--<setting name="logImpl" value="LOG4J"/>-->
+    <!--</settings>-->
+    <!-- 配置开发环境 -->
+    <environments default="mysql">
+        <environment id="mysql">
+            <!-- 配置事务管理器 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置数据源(管理Connection) -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- Mapper文件 -->
+    <mappers>
+        <package name="com.exam.dao"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+
+         id="WebApp_ID" version="3.1">
+    <display-name>Archetype Created Web Application</display-name>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.exam.web.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.exam.web.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login.action</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FilmListServlet</servlet-name>
+        <servlet-class>com.exam.web.FilmListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FilmListServlet</servlet-name>
+        <url-pattern>/filmlist.action</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddFilmServlet</servlet-name>
+        <servlet-class>com.exam.web.AddFilmServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFilmServlet</servlet-name>
+        <url-pattern>/AddFilmServlet.action</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteFilmServlet</servlet-name>
+        <servlet-class>com.exam.web.DeleteFilmServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFilmServlet</servlet-name>
+        <url-pattern>/DeleteFilmServlet.action</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditFilmServlet</servlet-name>
+        <servlet-class>com.exam.web.EditFilmServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditFilmServlet</servlet-name>
+        <url-pattern>/EditFilmServlet.action</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
