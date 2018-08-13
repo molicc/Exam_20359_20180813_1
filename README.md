@@ -9,4 +9,4 @@
 在过滤器的基础上,对除了index.jsp,login.jsp,login.action外的所有url进行登录校验<br>
 从index.jsp进入选择登录跳转login.jsp，点击登录触发LoginServlet对其进行登录校验，成功则触发FilmListServlet显示所有信息<br>
 并在FilmList.jsp点击不同按钮对数据进行相应的增删查改操作，每次完成相应操作均重定向到Filmlist.action进行结果展示。
-- GitHub:
+- [GitHub链接](https://github.com/molicc/Exam_20359_20180813_1.git)
